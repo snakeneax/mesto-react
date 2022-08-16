@@ -1,11 +1,11 @@
-import React, {useEffect} from "react";
+import {useEffect, useState} from 'react';
 import api from "../utils/api";
 import Card from "./Card";
 
 function Main(props) {
 
-  const [userInfo, setUserInfo] = React.useState({})
-  const [cards, setCards] = React.useState([])
+  const [userInfo, setUserInfo] = useState({})
+  const [cards, setCards] = useState([])
   useEffect(() => {
     Promise.all([api.getUserInfo(), api.getInitialCards()]).then(([profileInfo, card]) => {
       setUserInfo(profileInfo)
@@ -31,15 +31,15 @@ function Main(props) {
 
       <section className="elements">
         <ul className="elements__list">
-          {cards.map((card, id) => (
+          {cards.map((card, _id) => (
             <Card
-              key={id}
+              key={card._id}
               card={card}
               link={card.link}
               name={card.name}
               likes={card.likes.length}
               onCardClick={props.onCardClick}
-            />
+            />  
           ))}
         </ul>
       </section>

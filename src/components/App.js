@@ -53,16 +53,16 @@ function App() {
           name={'edit'}
           form={'profileData'}
           title={'Редактировать профиль'}
-          buttonText={'Сохранить'}
-          children={(
+          buttonText={'Сохранить'}>
+         
             <>
               <input className="popup__input" id="profile_name" name="profile_name" type="text" placeholder="Имя" minLength="2" maxLength="40" required/>
               <span className="popup__input-error" id="profile_name-error"/>
               <input className="popup__input" id="profile_description-error" name="profile_description-error" type="text" placeholder="О себе" minLength="2" maxLength="200" required/>
               <span className="popup__input-error" id="profile_description-error"/>
             </>
-          )}
-        />
+        
+        </PopupWithForm>
 
         <PopupWithForm
           isOpen={isAddPlacePopupOpen}
@@ -70,16 +70,16 @@ function App() {
           name={'add'}
           form={'placeData'}
           title={'Новое место'}
-          buttonText={'Создать'}
-          children={(
+          buttonText={'Создать'}>
+         
             <>
               <input className="popup__input" id="place_name" name="name" type="text" placeholder="Название" minLength="2" maxLength="30" required/>
               <span className="popup__input-error" id="place_name-error"/>
               <input className="popup__input" id="place_link" name="link" type="url" placeholder="Ссылка на картинку" required/>
               <span className="popup__input-error" id="place_link-error"/>
             </>
-          )}
-        />
+        
+        </PopupWithForm>
 
         <PopupWithForm
           isOpen={isEditAvatarPopupOpen}
@@ -87,14 +87,14 @@ function App() {
           name={'avatar'}
           form={'placeData'}
           title={'Обновить аватар'}
-          buttonText={'Сохранить'}
-          children={(
+          buttonText={'Сохранить'}>
+          
             <>
               <input className="popup__input" id="avatar_link" name="avatar_link" type="url" placeholder="Ссылка на аватар" required/>
               <span className="popup__input-error" id="avatar_link-error"/>
             </>
-          )}
-        />
+          
+        </PopupWithForm>
 
         <ImagePopup
           card={selectedCard}
