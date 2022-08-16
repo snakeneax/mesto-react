@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Проект "Место" на «React»  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Описание проекта
+Место - это интерактивная страница, на которой пользователи могут делиться фотографиями, удалять их и ставить лайки. 
 
-## Available Scripts
+Данный учебный проект создан в рамках прохождения 4-11 спринтов курса Веб-разработчик. Цель проекта закрепить на практике пройденный учебный материал, в который входят:
 
-In the project directory, you can run:
+- Портирование веб-приложения на «Реакт»;
+- Применение декларативного подхода;
+- Создание функциональных компонентов;
+- Использование «Реакт»-хуков.
 
-### `npm start`
+## Функционал:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Редактирование аватара и профиля;
+- Добавление фотографии и лайков;
+- Удаление фотографии и лайков;
+- Открытие фотографии в полном размере.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Стек технологий:
 
-### `npm test`
+- HTML5;
+- CSS3:
+  - Flexbox;
+  - Grid Layout;
+  - Positioning;
+  - Adaptive UI;
+  - Media Queries;
+- Методология БЭМ;
+- Фйловая структура Nested БЭМ;
+- JavaScript:
+  - Стиль CamelCase;
+  - Объектно-ориентированное программирование;
+  - Промисы (Promise);
+  - Асинхронность и оптимизация;
+  - API (Application Programming Interface);
+- Webpack;
+- React JS:
+  - Create React App;
+  - Портирование разметки в JSX;
+  - Функциональные компоненты;
+  - Хуки.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Установка и запуск приложения:
 
-### `npm run build`
+Клонировать репозиторий:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    git clone https://github.com/snakeneax/mesto-react.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Установить зависимости:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    npm install
 
-### `npm run eject`
+Запустить приложение:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    npm run start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Языки:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- JavaScript
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Библиотеки:
 
-## Learn More
+- ReactJS
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Макеты Проектной работы в Figma:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Макет 4](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4);
+- [Макет 5](https://www.figma.com/file/bjyvbKKJN2naO0ucURl2Z0/JavaScript.-Sprint-5);
+- [Макет 6-7](https://www.figma.com/file/kRVLKwYG3d1HGLvh7JFWRT/JavaScript.-Sprint-6);
+- [Макет 9](https://www.figma.com/file/PSdQFRHoxXJFs2FH8IXViF/JavaScript-9-sprint).
 
-### Code Splitting
+## Чеклисты Проектной работы:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [Чеклист 4](https://code.s3.yandex.net/web-developer/checklists/new-program/checklist-4/index.html);
+- [Чеклист 5](https://code.s3.yandex.net/web-developer/checklists/new-program/checklist-5/index.html);
+- [Чеклист 6](https://code.s3.yandex.net/web-developer/checklists/new-program/checklist-6/index.html);
+- [Чеклист 7](https://code.s3.yandex.net/web-developer/checklists/new-program/checklist-7/index.html);
+- [Чеклист 8](https://code.s3.yandex.net/web-developer/checklists/new-program/checklist-8/index.html);
+- [Чеклист 9](https://code.s3.yandex.net/web-developer/checklists/new-program/checklist-9/index.html);
+- [Чеклист 10](https://code.s3.yandex.net/web-developer/checklists/new-program/checklist-10/index.html);
+- [Чеклист 11](https://code.s3.yandex.net/web-developer/checklists/new-program/checklist-11/index.html).
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Ссылка на сайт:
+https://snakeneax.github.io/mesto-react/
