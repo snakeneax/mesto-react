@@ -41,25 +41,21 @@ function App() {
   }
 
   function handleCardLike(card) {
-    const isLiked = card.likes.some((i) => i._id === currentUser._id);
-
-    if (!isLiked) {
-      api.addCardLike(card._id)
-      .then((newCard) => {
-        setCards((state) => state.map((c) => (c._id === card._id ? newCard : c)));
+    const isLiked = card.likes.some(
+      (userWhoLiked) => userWhoLiked._id === currentUser._id
+    );
+    api
+      .changeLikeCardStatus(card, !isLiked)
+      .then((cardWithChangedLike) => {
+        setCards(
+          cards.map((cardFromState) =>
+            cardFromState._id === card._id ? cardWithChangedLike : cardFromState
+          )
+        );
       })
       .catch((err) => {
         console.error(err);
       });
-    } else {
-      api.deleteCardLike(card._id)
-      .then((newCard) => {
-        setCards((state) => state.map((c) => (c._id === card._id ? newCard : c)));
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-    }
   }
 
   function handleAddPlaceSubmit(data) {

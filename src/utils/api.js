@@ -58,21 +58,14 @@ class Api {
     }).then(this._checkResponse);
   }
 
-  addCardLike(cardId) {
-    const requestUrl = this._baseUrl + `/cards/likes/${cardId}`;
+  changeLikeCardStatus(card, likeCardStatus) {
+    const requestUrl = this._baseUrl + `/cards/likes/${card._id}`;
     return fetch(requestUrl, {
-      method: 'PUT',
+      method: (likeCardStatus ? "PUT": "DELETE"),
       headers: this._headers,
     }).then(this._checkResponse);
   }
 
-  deleteCardLike(cardId) {
-    const requestUrl = this._baseUrl + `/cards/likes/${cardId}`;
-    return fetch(requestUrl, {
-      method: 'DELETE',
-      headers: this._headers,
-    }).then(this._checkResponse);
-  }
 
   updateProfileAvatar(data) {
     const requestUrl = this._baseUrl + `/users/me/avatar`;
